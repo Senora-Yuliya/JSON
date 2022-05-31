@@ -1,0 +1,104 @@
+HW_1 GitBash. JSON
+
+MacOS BigSur
+Телеграмм - @i_am_like_a_bird
+
+
+ 4. Создать внешний репозиторий c названием JSON. 
+заходим на сайт GitHub - Create a new repository - Repository name- JSON - галочка Public - галочка Add REAME file - Creat repository
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+Code - HTTPS --копируем ссылку. Открываем терминал
+
+Создаём папку mkdir GitBash и заходим в неё cd GitBash (необязательно)
+git clone git@github.com:Senora-Yuliya/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”. 
+Заходим в свой локальный репозиторий cd JSON
+touch new.json
+
+ 7. Добавить файл под гит.
+git add new.json
+
+ 8. Закоммитить файл.
+git commit -m "Add new file"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push 
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+
+{
+        "NSF": {"name": "Yulia",
+        "surname": "Alekseeva"},
+        "age": 35,
+        "pets": 1,
+        "desired_salary": 3000
+}
+Esc :wq
+
+
+ 11. Отправить изменения на внешний репозиторий.
+git status
+git add new.json
+git commit -m "Add text to filee"
+git push
+
+ 12. Создать файл preferences.json
+touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+
+{
+    "favorite movie": "1+1",
+    "favorite TWShow": "Pacanki",
+    "favorite food": "Pizza",
+    "favorite season of the year": "Spring",
+    "Country I would like to visit": "Australia"
+}
+
+Esc :wq
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json
+
+{
+    "skill_1": "Terminal",
+    "skill_2": "GIT",
+    "skill_3": "VPN",
+    "skill_4": "SQL",
+    "skill_5": "Postman",
+    "skill_6": "Charles"
+}
+
+Esc :wq
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit preferences.json skills.json -m "Add two new files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+Заходим на GitHub - Go to file - Create new file
+Вводим название bug_report.json 
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Нажимаем commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Нажимаем карандаш (Edit this file)
+Заполняем
+
+{
+    "favorite movie": "1+1",   
+}
+Заполняем поле Commit changes
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажимаем  Commit changes
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
